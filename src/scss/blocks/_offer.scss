@@ -1,0 +1,79 @@
+.offer {
+  position: relative;
+  background-image: url(../img/offer/offer-image.jpg);
+  background-position: center right;
+  &:before {
+    content: '';
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    position: absolute;
+  }
+  &-block {
+    position: relative;
+    width: 50%;
+    padding-right: 90px;
+  }
+  &__title {
+    max-width: 360px;
+    margin-bottom: 24px;
+    line-height: 35px;
+  }
+  &__subtitle {
+    display: block;
+    max-width: 250px;
+    margin-bottom: 30px;
+  }
+  &__input {
+    width: 240px;
+    margin-bottom: 30px;
+    &:first-child {
+      margin-right: 11px;
+    }
+  }
+  &__button {
+    width: 100%;
+    padding: 22px 0;
+    font-size: 14px;
+    @include bold;
+    margin-bottom: 15px;
+  }
+  &-recall {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    line-height: 30px;
+    &__manager {
+      width: 230px;
+    }
+    &__self {
+      max-width: 192px;
+    }
+    &__tel {
+      @include bold;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .offer {
+    &__input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .offer {
+    background: #fff;
+    &-block {
+      padding-right: 0;
+      width: 100%;
+    }
+    &-recall {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+}

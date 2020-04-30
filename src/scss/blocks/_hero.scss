@@ -1,11 +1,11 @@
 .hero {
   padding: 50px 0;
+  background-color: $secondary-bcg;
   &-block {
   display: flex;
   }
   &-text {
-    flex-basis: 45%;
-    padding-right: 120px;
+    flex-basis: 52%;
     &__title {
       font-size: 41px;
       line-height: 55px;
@@ -19,12 +19,12 @@
       @include bold;
     }
   }
-  &-image_m {
-  width: 570px;
-  }
   &-list {
     margin: 0;
     padding: 0;
+    :last-child {
+      margin-bottom: 0;
+    }
     &__item {
       display: flex;
       align-items: center;
