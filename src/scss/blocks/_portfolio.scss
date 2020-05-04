@@ -1,0 +1,40 @@
+.portfolio {
+  background-color: $secondary-bcg;
+  &__title {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 99px;
+  }
+  &__arrows {
+    max-width: 120px;
+    margin: auto;
+    margin-top: 68px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.slider {
+  &__item {
+    outline: none;
+  }
+  &__img {
+    width: 370px;
+    height: 280px;
+  }
+}
+
+.arrows {
+  max-width: 120px;
+  &__left, &__right {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.slider {
+  &__img {
+    margin: auto;
+  }
+}

@@ -15,8 +15,7 @@
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -65,6 +64,7 @@ img {
 }
 
 .section-title {
+  text-align: center;
   font-size: 24px;
   font-family: 'Museo Sans Bold';
   font-weight: 700;
@@ -83,36 +83,21 @@ img {
 }
 
 .header-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 8px 0;
 }
 
 .header__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: right;
 }
 
 .header__contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .header__button {
@@ -149,14 +134,11 @@ img {
 }
 
 .hero-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .hero-text {
-  -ms-flex-preferred-size: 52%;
-      flex-basis: 52%;
+  flex-basis: 52%;
 }
 
 .hero-text__title {
@@ -185,29 +167,18 @@ img {
 }
 
 .hero-list__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 25px;
 }
 
 .hero-list__image {
-  -ms-flex-preferred-size: 40px;
-      flex-basis: 40px;
+  flex-basis: 40px;
   height: 40px;
   border: 2px solid #FFD200;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   margin-right: 30px;
 }
@@ -219,10 +190,7 @@ img {
 
 @media (max-width: 1200px) {
   .hero-block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .hero-list {
     margin-bottom: 44px;
@@ -277,6 +245,7 @@ img {
 }
 
 .offer__title {
+  text-align: left;
   max-width: 360px;
   margin-bottom: 24px;
   line-height: 35px;
@@ -307,12 +276,8 @@ img {
 }
 
 .offer-recall {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   font-size: 15px;
   line-height: 30px;
 }
@@ -347,10 +312,77 @@ img {
   }
   .offer-recall {
     width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
+}
+
+.portfolio {
+  background-color: #f5f5f5;
+}
+
+.portfolio__title {
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 99px;
+}
+
+.portfolio__arrows {
+  max-width: 120px;
+  margin: auto;
+  margin-top: 68px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__item {
+  outline: none;
+}
+
+.slider__img {
+  width: 370px;
+  height: 280px;
+}
+
+.arrows {
+  max-width: 120px;
+}
+
+.arrows__left:hover, .arrows__right:hover {
+  cursor: pointer;
+}
+
+.slider__img {
+  margin: auto;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal_active {
+  display: flex;
+}
+
+.modal-dialog {
+  position: relative;
+  margin: auto;
+  max-width: 450px;
+  width: 90%;
+  min-height: 200px;
+  background-color: #fff;
+  padding: 40px;
+}
+
+.modal-dialog__close {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */
