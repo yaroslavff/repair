@@ -30,6 +30,10 @@
   &__input {
     width: 240px;
     margin-bottom: 30px;
+    color: $text-color;
+    &::placeholder {
+      color: #dddddd;
+    }
     &:first-child {
       margin-right: 11px;
     }
@@ -75,6 +79,9 @@
     &-recall {
       width: 100%;
       flex-direction: column;
+    }
+    &__title {
+      margin-top: 0;
     }
   }
 }

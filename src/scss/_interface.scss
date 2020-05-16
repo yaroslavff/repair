@@ -53,6 +53,12 @@ img {
   }
 }
 
+@media (max-width: 768px) {
+  .section {
+    padding: 45px 0;
+  }
+}
+
 .input {
   outline: none;
   border: 1px solid $colorinput;
