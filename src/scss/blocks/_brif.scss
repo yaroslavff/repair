@@ -134,6 +134,13 @@
   }
 }
 @media (max-width: 768px) {
+  .brif {
+    &__discription {
+      max-width: 135px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  }
   .interview {
     &__title {
       max-width: 300px;
